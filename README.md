@@ -19,5 +19,8 @@ Anything related to how IPs are allocated in the company has been hidden or dele
 - fix bug (unable to generate log file in the morning)  
 - can display "Request timed out" in log file as well  
 
+11/11/2019
+- fix bug (case TTL expired in transit was not included)  
+
 ## Todo List
 - [ ] Rewrite in VBA? to interact with excel files
