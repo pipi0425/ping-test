@@ -17,14 +17,14 @@ FOR /F "tokens=1" %%n IN (stores1.txt) DO (
     echo * Store # %%n>>ping-%logdate%-%logtime%.log
     set /a var=%%n-DUMMY1
     set ip=FOO1.FOO2.!var!.FOO3
-    ping !ip! -n 1 | findstr "Average timed unreachable">>ping-%logdate%-%logtime%.log
+    ping !ip! -n 1 | findstr "Average timed unreachable TTL">>ping-%logdate%-%logtime%.log
     echo === Store # %%n [!ip!] pinged ===
 )
 FOR /F "tokens=1" %%n IN (stores2.txt) DO (
     echo * Store # %%n>>ping-%logdate%-%logtime%.log
     set /a var=%%n-DUMMY2
     set ip=FOO4.FOO5.!var!.FOO6
-    ping !ip! -n 1 | findstr "Average timed unreachable">>ping-%logdate%-%logtime%.log
+    ping !ip! -n 1 | findstr "Average timed unreachable TTL">>ping-%logdate%-%logtime%.log
     echo === Store # %%n [!ip!] pinged ===
 )
 echo.
