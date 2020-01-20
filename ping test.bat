@@ -20,6 +20,7 @@ FOR /F "tokens=1" %%n IN (stores1.txt) DO (
     ping !ip! -n 1 | findstr "Average timed unreachable TTL">>ping-%logdate%-%logtime%.log
     echo === Store # %%n [!ip!] pinged ===
 )
+:: Using two loops because the company uses two set of ip ranges
 FOR /F "tokens=1" %%n IN (stores2.txt) DO (
     echo * Store # %%n>>ping-%logdate%-%logtime%.log
     set /a var=%%n-DUMMY2
