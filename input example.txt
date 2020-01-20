@@ -2,3 +2,5 @@
 456 can be any comment
 789 the file can be as large as you want
 101 as long as the ip calculated is valid
+
+basically for every line, start with the store number and follow by the store name (address)
