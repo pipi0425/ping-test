@@ -1,4 +1,9 @@
 # ping-test
+
+## 2020/01/20 update: 
+This was the tool I wrote for daily usage in the company. I've left the company after the 4-month internship so generally this is no longer useful. I just keep this project to record what I've done and as a reference if I need to write batch scripts in the future...
+
+## General Info
 tool created when working as helpdesk technician at Bulk Barn Foods Limited
 
 This is a batch script to ping a list of ips - used to check online status of the firewall of each store.  
@@ -23,4 +28,4 @@ Anything related to how IPs are allocated in the company has been hidden or dele
 - fix bug (case TTL expired in transit was not included)  
 
 ## Todo List
-- [ ] Rewrite in VBA? to interact with excel files
+~~Rewrite in VBA? to interact with excel files~~
